@@ -27,7 +27,7 @@ public class MyWorld extends World
         }
         if(Greenfoot.getRandomNumber(90) < 3)
         {
-            addObject(new banana(), 948,Greenfoot.getRandomNumber(360));
+            addObject(new Banana(), 948,Greenfoot.getRandomNumber(360));
         }
         if(Greenfoot.getRandomNumber(90) < 3)
         {
@@ -54,7 +54,7 @@ public class MyWorld extends World
         addObject(cart,41,244);
         cart.setLocation(111,255);
         
-        banana banana = new banana();
+        Banana banana = new Banana();
         addObject(banana,397,68);
         
         strawberry strawberry = new strawberry();
