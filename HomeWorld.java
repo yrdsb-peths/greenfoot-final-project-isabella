@@ -26,7 +26,7 @@ public class HomeWorld extends World
      */
     private void prepare()
     {
-        info info = new info();
+        Info info = new Info();
         addObject(info,91,299);
 
         info.setLocation(105,305);
@@ -35,5 +35,6 @@ public class HomeWorld extends World
         info.setLocation(320,64);
         Greenfoot.playSound("a-jazz-piano-110481.mp3");
         info.setLocation(308,68);
+        info.setLocation(501,68);
     }
 }

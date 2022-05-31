@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class info extends Actor
+public class Info extends Actor
 {
     /**
      * Act - do whatever the info wants to do. This method is called whenever
@@ -17,6 +17,7 @@ public class info extends Actor
         if(Greenfoot.mousePressed(this))
         {
             Greenfoot.delay(5);
+            Greenfoot.playSound("click.mp3");
             Greenfoot.setWorld(new InstructionsWorld());
             //getImage().scale((int)Math.round(getImage().getWidth()*0.9),
             //(int)Math.round(getImage().getHeight()*0.9));

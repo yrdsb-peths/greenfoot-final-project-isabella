@@ -6,14 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class strawberry extends Actor
+public class Strawberry extends Actor
 {
     private int speed;
     /**
      * Act - do whatever the strawberry wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-     public strawberry()
+     public Strawberry()
     {
         speed = Greenfoot.getRandomNumber(1)+1;
     }
