@@ -23,19 +23,19 @@ public class MyWorld extends World
     {
         if(Greenfoot.getRandomNumber(90) < 3)
         {
-            addObject(new Strawberry(), 948,Greenfoot.getRandomNumber(360));
+            addObject(new strawberry(), 948,Greenfoot.getRandomNumber(360));
         }
-        if(Greenfoot.getRandomNumber(90) < 3)
+        if(Greenfoot.getRandomNumber(150) < 3)
         {
-            addObject(new Banana(), 948,Greenfoot.getRandomNumber(360));
+            addObject(new banana(), 948,Greenfoot.getRandomNumber(360));
         }
-        if(Greenfoot.getRandomNumber(90) < 3)
+        if(Greenfoot.getRandomNumber(200) < 3)
         {
-            addObject(new Bomb(), 948,Greenfoot.getRandomNumber(360));
+            addObject(new bomb(), 948,Greenfoot.getRandomNumber(360));
         }
-        if(Greenfoot.getRandomNumber(90) < 3)
+        if(Greenfoot.getRandomNumber(200) < 3)
         {
-            addObject(new Rock(), 948,Greenfoot.getRandomNumber(360));
+            addObject(new rock(), 948,Greenfoot.getRandomNumber(360));
         }
         if(MyWorld.score.getValue()>=30)
         {
@@ -50,18 +50,18 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        Cart cart = new Cart();
+        cart cart = new cart();
         addObject(cart,41,244);
         cart.setLocation(111,255);
         
-        Banana banana = new Banana();
+        banana banana = new banana();
         addObject(banana,397,68);
         
-        Strawberry strawberry = new Strawberry();
+        strawberry strawberry = new strawberry();
         addObject(strawberry,232,115);
-        Bomb bomb = new Bomb();
+        bomb bomb = new bomb();
         addObject(bomb,414,214);
-        Rock rock = new Rock();
+        rock rock = new rock();
         addObject(rock,530,338);
     }
 }

@@ -25,7 +25,7 @@ public class InstructionsWorld extends World
      */
     private void prepare()
     {
-        Back Back = new Back();
-        addObject(Back,506,62);
+        back back = new back();
+        addObject(back,506,62);
     }
 }

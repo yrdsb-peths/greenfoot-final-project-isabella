@@ -6,24 +6,24 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Bomb extends Actor
+public class bomb extends Actor
 {
     private int speed;
     /**
      * Act - do whatever the bomb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Bomb()
+    public bomb()
     {
-        speed = Greenfoot.getRandomNumber(2)+1;
+        speed = Greenfoot.getRandomNumber(1)+1;
     }
     public void act()
     {
         // Add your action code here.
         setLocation(getX()-4, getY());
-        if(isTouching(Cart.class))
+        if(isTouching(cart.class))
         {
-            removeTouching(Cart.class);
+            removeTouching(cart.class);
             Greenfoot.setWorld(new GameOverWorld());
             
         }
