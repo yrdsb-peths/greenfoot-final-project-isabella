@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     static Counter score = new Counter("Score : ");
+
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -63,5 +64,10 @@ public class MyWorld extends World
         addObject(bomb,414,214);
         rock rock = new rock();
         addObject(rock,530,338);
+        
+        
+        addObject(score,80,45);
+        score.setValue(0);
+        
     }
 }

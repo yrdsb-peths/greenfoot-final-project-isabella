@@ -27,7 +27,12 @@ public class rock extends Actor
             Greenfoot.setWorld(new GameOverWorld());
             
         }
-        
+        if(getX() < 5)
+        {
+            getWorld().removeObject(this);
+
+        }
+
 
     }
 }
