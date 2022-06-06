@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and Mouseinfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class info extends Actor
+public class Info extends Actor
 {
     /**
      * Act - do whatever the info wants to do. This method is called whenever

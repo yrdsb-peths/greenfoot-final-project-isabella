@@ -26,7 +26,7 @@ public class HomeWorld extends World
      */
     private void prepare()
     {
-        info info = new info();
+        Info info = new Info();
         addObject(info,91,299);
 
         info.setLocation(105,305);
