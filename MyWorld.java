@@ -26,24 +26,25 @@ public class MyWorld extends World
         {
             addObject(new Strawberry(), 948,Greenfoot.getRandomNumber(360));
         }
-        if(Greenfoot.getRandomNumber(150) < 3)
+        if(Greenfoot.getRandomNumber(120) < 3)
         {
             addObject(new Banana(), 948,Greenfoot.getRandomNumber(360));
         }
-        if(Greenfoot.getRandomNumber(200) < 3)
+        if(Greenfoot.getRandomNumber(150) < 2)
         {
             addObject(new Bomb(), 948,Greenfoot.getRandomNumber(360));
         }
-        if(Greenfoot.getRandomNumber(200) < 3)
+        if(Greenfoot.getRandomNumber(200) < 2)
         {
             addObject(new Rock(), 948,Greenfoot.getRandomNumber(360));
         }
-        if(MyWorld.score.getValue()>=30)
+        /*if(MyWorld.score.getValue()>=40)
         {
             Greenfoot.delay(5);
             Greenfoot.setWorld(new LevelTwoWorld());
             
         }
+        */
     }
     /**
      * Prepare the world for the start of the program.

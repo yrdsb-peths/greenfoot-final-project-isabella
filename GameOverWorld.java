@@ -20,6 +20,7 @@ public class GameOverWorld extends World
         showText("YOUR SCORE: " + MyWorld.score.getValue()+" points", 450, 305); 
 
         prepare();
+        
     }
 
     /**
