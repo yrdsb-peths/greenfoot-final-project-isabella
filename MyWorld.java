@@ -38,14 +38,16 @@ public class MyWorld extends World
         {
             addObject(new Rock(), 948,Greenfoot.getRandomNumber(360));
         }
-        /*if(MyWorld.score.getValue()>=40)
+        if(MyWorld.score.getValue()>=40)
         {
-            Greenfoot.delay(5);
+            /*Greenfoot.delay(5);
             Greenfoot.setWorld(new LevelTwoWorld());
-            
+            */
+           
         }
-        */
+        
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -55,20 +57,21 @@ public class MyWorld extends World
         Cart cart = new Cart();
         addObject(cart,41,244);
         cart.setLocation(111,255);
-        
+
         Banana banana = new Banana();
         addObject(banana,397,68);
-        
+
         Strawberry strawberry = new Strawberry();
         addObject(strawberry,232,115);
         Bomb bomb = new Bomb();
         addObject(bomb,414,214);
         Rock rock = new Rock();
         addObject(rock,530,338);
-        
-        
+
         addObject(score,80,45);
         score.setValue(0);
-        
+
+        Achievement achievement = new Achievement();
+        addObject(achievement,489,38);
     }
 }

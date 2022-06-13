@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Arrow here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Isabella (your name) 
+ * @June 13th 2021 (a version number or a date)
  */
 public class Arrow extends Actor
 {
