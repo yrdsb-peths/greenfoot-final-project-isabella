@@ -18,7 +18,7 @@ public class Achievement extends Actor
         {
             Achievement achievement = new Achievement();
             MyWorld w = (MyWorld)getWorld();
-            w.addObject(achievement,489,38);
+            w.addObject(achievement,480,38);
             /*Greenfoot.delay(5);
             Greenfoot.setWorld(new LevelTwoWorld());
             */

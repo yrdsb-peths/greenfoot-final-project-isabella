@@ -71,7 +71,7 @@ public class MyWorld extends World
         addObject(score,80,45);
         score.setValue(0);
 
-        Achievement achievement = new Achievement();
-        addObject(achievement,489,38);
+        
+        
     }
 }
