@@ -14,11 +14,12 @@ public class ToHomeWorld extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        //Allows the button to minimize in size when pressed on
         if(Greenfoot.mousePressed(this))
         {
             getImage().scale((int)Math.round(getImage().getWidth()*0.9),
-            (int)Math.round(getImage().getHeight()*0.9));
+                (int)Math.round(getImage().getHeight()*0.9));
+
             Greenfoot.delay(5);
             Greenfoot.playSound("click.mp3");
             Greenfoot.setWorld(new MyWorld());
