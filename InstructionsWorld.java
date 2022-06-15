@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class InstructionsWorld here.
+ * A World that provides the story of the game
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Isabella 
+ * @version June 2022
  */
 public class InstructionsWorld extends World
 {
@@ -19,6 +19,7 @@ public class InstructionsWorld extends World
         super(600, 400, 1); 
         prepare();
     }
+
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

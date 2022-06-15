@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameOverWorld here.
+ * This world contains the end screen
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Isabella
+ * @version June 2022
  */
 public class GameOverWorld extends World
 {
@@ -21,7 +21,7 @@ public class GameOverWorld extends World
         showText("YOUR SCORE: " + MyWorld.score.getValue()+" points", 450, 305); 
 
         prepare();
-        
+
     }
 
     /**
@@ -34,7 +34,7 @@ public class GameOverWorld extends World
         addObject(replay,306,240);
         Quit quit = new Quit();
         addObject(quit,134,239);
-        
+
         replay.setLocation(199,232);
         quit.setLocation(432,231);
         replay.setLocation(188,226);

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Arrow
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Arrow\ here.\r\n\ \r\n\ @Isabella\ (your\ name)\ \r\n\ @June\ 13th\ 2021\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=Arrow()
+comment2.text=\r\n\ Adds\ animation\ to\ the\ arrow\ actor\r\n
+comment3.params=
+comment3.target=void\ animateArrow()
+comment3.text=\r\n\ Sets\ the\ speed\ of\ the\ animation\r\n
+numComments=4

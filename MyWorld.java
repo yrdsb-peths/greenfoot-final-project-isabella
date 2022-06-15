@@ -1,13 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * This is the main world where the game is executed
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class MyWorld extends World
 {
+    //This keeps track of the score when playing
     static Counter score = new Counter("Score : ");
 
     /**
@@ -20,9 +21,12 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
     }
+
+    /**
+     * Controls the speed and spawn area of actors
+     */
     public void act()
     {
-        //Controls the speed and spawn area of actors
         if(Greenfoot.getRandomNumber(90) < 3)
         {
             addObject(new Strawberry(), 948,Greenfoot.getRandomNumber(360));
@@ -39,9 +43,9 @@ public class MyWorld extends World
         {
             addObject(new Rock(), 948,Greenfoot.getRandomNumber(360));
         }
-        
+
     }
-    
+
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -64,6 +68,7 @@ public class MyWorld extends World
 
         addObject(score,80,45);
         score.setValue(0);
-   
+        
+
     }
 }

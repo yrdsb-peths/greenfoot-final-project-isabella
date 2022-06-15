@@ -9,23 +9,27 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Banana extends Actor
 {
     private int speed;
+
     /**
-     * Act - do whatever the banana wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Sets the speed of the banana actor
      */
     public Banana()
     {
         speed = Greenfoot.getRandomNumber(4)+1;
     }
+
+    /**
+     * Allows score to increase and removal of object
+     */
     public void act()
     {
-        // Add your action code here.
+
         setLocation(getX()-speed, getY());
         if(getX() == 0)
         {
             MyWorld.score.add(0);
             getWorld().removeObject(this);
-            
+
         }
     }
 }

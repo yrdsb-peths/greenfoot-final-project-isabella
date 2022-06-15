@@ -14,35 +14,41 @@ public class Arrow extends Actor
      */
     GreenfootImage[] idle = new GreenfootImage[2];
     SimpleTimer timer = new SimpleTimer();
-    
+
     public void act()
     {
-      animateArrow();
+        animateArrow();
     }
-    
+
+    /**
+     * Adds animation to the arrow actor
+     */
     public Arrow()
-    
+
     {
         for(int i = 0; i < idle.length; i ++)
         {
             idle[i] = new GreenfootImage("images/idle/idle" + i + ".png");
         }
         setImage(idle[0]);
-        
+
         timer.mark();
     }
-    
+
     int imageIndex = 0;
+    /**
+     * Sets the speed of the animation
+     */
     public void animateArrow()
     {
         if(timer.millisElapsed() < 150)
         {
             return;
-            
+
         }
         timer.mark();
         setImage(idle[imageIndex]);
         imageIndex = (imageIndex + 1) % idle.length;
     }
-    
+
 }

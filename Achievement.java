@@ -21,8 +21,9 @@ public class Achievement extends Actor
             w.addObject(achievement,480,38);
             /*Greenfoot.delay(5);
             Greenfoot.setWorld(new LevelTwoWorld());
-            */
-           
+             */
+
         }
+
     }
 }

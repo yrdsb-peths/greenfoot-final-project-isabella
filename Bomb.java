@@ -13,19 +13,24 @@ public class Bomb extends Actor
      * Act - do whatever the bomb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    //Sets the speed
     public Bomb()
     {
         speed = Greenfoot.getRandomNumber(1)+1;
     }
+
+    /**
+     * Actor is removed when touching the cart class
+     */
     public void act()
     {
-        // Add your action code here.
+
         setLocation(getX()-4, getY());
         if(isTouching(Cart.class))
         {
             removeTouching(Cart.class);
             Greenfoot.setWorld(new GameOverWorld());
-            
+
         }
         if(getX() < 5)
         {

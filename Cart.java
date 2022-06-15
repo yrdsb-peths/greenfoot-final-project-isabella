@@ -14,50 +14,52 @@ public class Cart extends Actor
      */
     public void act()
     {
-        // Add your action code here.
         checkKeyPress();
         checkCollision();
-       
-        
+
     }
-    
+
+    /**
+     * Sets the keys WASD to move the cart
+     */
     private void checkKeyPress()
     {
-        // Sets the keys WASD to move the cart
+
         if(Greenfoot.isKeyDown("w"))
         {
-          setLocation(getX(),getY()-6);  
+            setLocation(getX(),getY()-6);  
         }
         if(Greenfoot.isKeyDown("s"))
         {
-          setLocation(getX(),getY()+6);  
+            setLocation(getX(),getY()+6);  
         }
         if(Greenfoot.isKeyDown("a"))
         {
-          setLocation(getX()-4,getY());  
+            setLocation(getX()-4,getY());  
         }
         if(Greenfoot.isKeyDown("d"))
         {
-          setLocation(getX() + 4,getY());  
+            setLocation(getX() + 4,getY());  
         }
     }
-    
+
+    /**
+     * Allows the cart to remove the strawberry and banana class
+     */
     private void checkCollision()
     {
-        // Allows the cart to remove the strawberry and banana class
+
         if(isTouching(Strawberry.class))
         {
             removeTouching(Strawberry.class);
             MyWorld.score.add(2);
-            
-          
+
         }
         if(isTouching(Banana.class))
         {
             removeTouching(Banana.class);
             MyWorld.score.add(4);
-            
-          
+
         }
     }
 }

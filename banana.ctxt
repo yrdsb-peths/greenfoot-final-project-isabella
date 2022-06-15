@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Banana
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ banana\ here.\r\n\ \r\n\ @Isabella\ (your\ name)\ \r\n\ @June\ 14\ 2022\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Banana()
+comment1.text=\r\n\ Sets\ the\ speed\ of\ the\ banana\ actor\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Allows\ score\ to\ increase\ and\ removal\ of\ object\r\n
+numComments=3
