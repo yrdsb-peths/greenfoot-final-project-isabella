@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class cart here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Isabella (your name) 
+ * @June 14 2022 (a version number or a date)
  */
 public class Cart extends Actor
 {
@@ -23,6 +23,7 @@ public class Cart extends Actor
     
     private void checkKeyPress()
     {
+        // Sets the keys WASD to move the cart
         if(Greenfoot.isKeyDown("w"))
         {
           setLocation(getX(),getY()-6);  
@@ -43,6 +44,7 @@ public class Cart extends Actor
     
     private void checkCollision()
     {
+        // Allows the cart to remove the strawberry and banana class
         if(isTouching(Strawberry.class))
         {
             removeTouching(Strawberry.class);

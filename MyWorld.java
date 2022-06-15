@@ -22,6 +22,7 @@ public class MyWorld extends World
     }
     public void act()
     {
+        //Controls the speed and spawn area of actors
         if(Greenfoot.getRandomNumber(90) < 3)
         {
             addObject(new Strawberry(), 948,Greenfoot.getRandomNumber(360));
@@ -37,13 +38,6 @@ public class MyWorld extends World
         if(Greenfoot.getRandomNumber(200) < 2)
         {
             addObject(new Rock(), 948,Greenfoot.getRandomNumber(360));
-        }
-        if(MyWorld.score.getValue()>=40)
-        {
-            /*Greenfoot.delay(5);
-            Greenfoot.setWorld(new LevelTwoWorld());
-            */
-           
         }
         
     }
@@ -70,8 +64,6 @@ public class MyWorld extends World
 
         addObject(score,80,45);
         score.setValue(0);
-
-        
-        
+   
     }
 }

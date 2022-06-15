@@ -17,6 +17,7 @@ public class GameOverWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
+        // Shows players their end score 
         showText("YOUR SCORE: " + MyWorld.score.getValue()+" points", 450, 305); 
 
         prepare();
@@ -33,18 +34,7 @@ public class GameOverWorld extends World
         addObject(replay,306,240);
         Quit quit = new Quit();
         addObject(quit,134,239);
-        replay.setLocation(425,251);
-        quit.setLocation(183,229);
-        replay.setLocation(486,236);
-        quit.setLocation(184,233);
-        quit.setLocation(341,304);
-        replay.setLocation(285,224);
-        quit.setLocation(290,277);
-        replay.setLocation(132,236);
-        quit.setLocation(468,226);
-        replay.setLocation(191,236);
-        quit.setLocation(420,236);
-        replay.setLocation(135,240);
+        
         replay.setLocation(199,232);
         quit.setLocation(432,231);
         replay.setLocation(188,226);

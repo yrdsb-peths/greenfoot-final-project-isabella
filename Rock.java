@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class rock here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Isabella (your name) 
+ * @Zhu (a version number or a date)
  */
 public class Rock extends Actor
 {
@@ -19,7 +19,7 @@ public class Rock extends Actor
     }
     public void act()
     {
-        // Add your action code here.
+        // Sets location and allows rock to be removed when touched
         setLocation(getX()-4, getY());
         if(isTouching(Cart.class))
         {

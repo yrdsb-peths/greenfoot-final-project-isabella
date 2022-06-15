@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and Mouseinfo)
 /**
  * Write a description of class info here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Isabella (your name) 
+ * @June 14 2022 (a version number or a date)
  */
 public class Info extends Actor
 {
@@ -16,21 +16,14 @@ public class Info extends Actor
     {
         if(Greenfoot.mousePressed(this))
         {
+            //Allows the button to minimize in size when pressed on
             getImage().scale((int)Math.round(getImage().getWidth()*0.9),
             (int)Math.round(getImage().getHeight()*0.9));
+            
             Greenfoot.delay(5);
             Greenfoot.playSound("click.mp3");
             Greenfoot.setWorld(new InstructionsWorld());
-            //getImage().scale((int)Math.round(getImage().getWidth()*0.9),
-            //(int)Math.round(getImage().getHeight()*0.9));
             
-            /*if(Greenfoot.mouseClicked(this))
-            {
-                Greenfoot.delay(5);
-                Greenfoot.setWorld(new InstructionsWorld());
-                
-            }
-            */
             
         }
     }

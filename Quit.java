@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Quit here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Isabella(your name) 
+ * @June 14 2022 (a version number or a date)
  */
 public class Quit extends Actor
 {
@@ -14,7 +14,8 @@ public class Quit extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        // Allows button to minimize in size, produce sound and set to a 
+        // new world
         if(Greenfoot.mousePressed(this))
         {
             getImage().scale((int)Math.round(getImage().getWidth()*0.9),
